@@ -34,12 +34,16 @@ nav a:hover {
 }
 
 body {
-background-color: lightblue;
+background-color: rgb(66, 68, 75);
 text-align: center;
 }
 
 main {
 margin-right: 20px;
 margin-left: 20px;
-background-color: white;
+background-color: rgb(246, 249, 161);
+}
+
+h2 {
+background-color: rgb(35, 243, 233);
 }

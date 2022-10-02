@@ -1,4 +1,3 @@
-
 const mongoose = require('mongoose')
 
 const placeSchema = new mongoose.Schema({
@@ -11,7 +10,8 @@ const placeSchema = new mongoose.Schema({
     type: Number,
     min: [1673, 'The year of the oldest US Restuarant White Horse Tavern'],
     max: [new Date().getFullYear(), 'Guess we are going back to the future']
-  }
+  },
+  comments: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Comment' }]
 })
 
 placeSchema.methods.showEstablished = function() {
